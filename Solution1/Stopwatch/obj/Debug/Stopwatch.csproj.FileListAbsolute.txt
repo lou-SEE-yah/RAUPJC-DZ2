@@ -1,0 +1,6 @@
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Stopwatch\bin\Debug\Stopwatch.exe.config
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Stopwatch\bin\Debug\Stopwatch.exe
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Stopwatch\bin\Debug\Stopwatch.pdb
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Stopwatch\obj\Debug\Stopwatch.csprojResolveAssemblyReference.cache
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Stopwatch\obj\Debug\Stopwatch.exe
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Stopwatch\obj\Debug\Stopwatch.pdb

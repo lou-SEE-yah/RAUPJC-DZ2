@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelsTests", "ModelsTests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQIzrazi", "LINQIzrazi\LINQIzrazi.csproj", "{F78B1470-2BC1-4E68-8695-80C8B1E391F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stopwatch", "Stopwatch\Stopwatch.csproj", "{5AFCF4A0-FA94-480D-8CC3-884112EE54AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F78B1470-2BC1-4E68-8695-80C8B1E391F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F78B1470-2BC1-4E68-8695-80C8B1E391F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F78B1470-2BC1-4E68-8695-80C8B1E391F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFCF4A0-FA94-480D-8CC3-884112EE54AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFCF4A0-FA94-480D-8CC3-884112EE54AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFCF4A0-FA94-480D-8CC3-884112EE54AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFCF4A0-FA94-480D-8CC3-884112EE54AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
