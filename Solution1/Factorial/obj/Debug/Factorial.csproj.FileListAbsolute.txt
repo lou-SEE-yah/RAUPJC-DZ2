@@ -1,0 +1,6 @@
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Factorial\bin\Debug\Factorial.exe.config
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Factorial\obj\Debug\Factorial.csprojResolveAssemblyReference.cache
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Factorial\bin\Debug\Factorial.exe
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Factorial\bin\Debug\Factorial.pdb
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Factorial\obj\Debug\Factorial.exe
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Factorial\obj\Debug\Factorial.pdb
