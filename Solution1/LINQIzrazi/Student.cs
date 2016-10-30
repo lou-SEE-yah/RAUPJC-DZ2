@@ -38,14 +38,19 @@ namespace LINQIzrazi
             var student = obj as Student;
             if (object.ReferenceEquals(student, null))
                 return false;
-            if (this.Name.Equals(student.Name) && this.Gender.Equals(student.Gender) && this.Jmbag.Equals(student.Jmbag))
+            if (this.Jmbag.Equals(student.Jmbag))
                 return true;
             return false;
         }
 
         public override int GetHashCode()
         {
-            return this.Gender.GetHashCode() + this.Jmbag.GetHashCode() + this.Name.GetHashCode();
+            return this.Jmbag.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return Jmbag.ToString() + "-" + Name.ToString();
         }
     }
 

@@ -157,6 +157,7 @@ namespace Repositories.Tests
         #endregion
 
         #region Update tests
+        //ne radi
         [TestMethod()]
         public void UpdateTest()
         {
