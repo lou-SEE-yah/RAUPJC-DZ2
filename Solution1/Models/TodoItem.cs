@@ -35,7 +35,9 @@ namespace Models
         {
             var item = obj as TodoItem;
             if (item == null) return false;
-            return this.Id.Equals(item.Id);
+            if (this.Id.Equals(item.Id))
+                return true;
+            return false;
         }
 
         public override int GetHashCode()

@@ -1,0 +1,6 @@
+C:\PPI\c#\RAUPJC-DZ2\Solution1\LINQIzrazi\bin\Debug\LINQIzrazi.exe.config
+C:\PPI\c#\RAUPJC-DZ2\Solution1\LINQIzrazi\bin\Debug\LINQIzrazi.exe
+C:\PPI\c#\RAUPJC-DZ2\Solution1\LINQIzrazi\bin\Debug\LINQIzrazi.pdb
+C:\PPI\c#\RAUPJC-DZ2\Solution1\LINQIzrazi\obj\Debug\LINQIzrazi.csprojResolveAssemblyReference.cache
+C:\PPI\c#\RAUPJC-DZ2\Solution1\LINQIzrazi\obj\Debug\LINQIzrazi.exe
+C:\PPI\c#\RAUPJC-DZ2\Solution1\LINQIzrazi\obj\Debug\LINQIzrazi.pdb

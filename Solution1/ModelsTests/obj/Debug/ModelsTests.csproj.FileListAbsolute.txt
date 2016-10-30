@@ -1,0 +1,10 @@
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\bin\Debug\ModelsTests.dll
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\bin\Debug\ModelsTests.pdb
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\bin\Debug\Models.dll
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\bin\Debug\zad2.exe
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\bin\Debug\Models.pdb
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\bin\Debug\zad2.pdb
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\obj\Debug\ModelsTests.csprojResolveAssemblyReference.cache
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\obj\Debug\ModelsTests.dll
+C:\PPI\c#\RAUPJC-DZ2\Solution1\ModelsTests\obj\Debug\ModelsTests.pdb

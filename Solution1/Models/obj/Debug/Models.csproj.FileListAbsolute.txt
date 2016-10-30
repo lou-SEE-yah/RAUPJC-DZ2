@@ -1,0 +1,7 @@
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Models\bin\Debug\Models.dll
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Models\bin\Debug\Models.pdb
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Models\bin\Debug\zad2.exe
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Models\bin\Debug\zad2.pdb
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Models\obj\Debug\Models.dll
+C:\PPI\c#\RAUPJC-DZ2\Solution1\Models\obj\Debug\Models.pdb

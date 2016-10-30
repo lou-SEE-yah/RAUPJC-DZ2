@@ -61,5 +61,7 @@ namespace Interfaces
         /// Gets all TodoItem objects in database that apply to the filter
         /// </ summary >
         List<TodoItem> GetFiltered(Func<TodoItem, bool> filterFunction);
+
+        //bool Contains(TodoItem todoItem);
     }
 }

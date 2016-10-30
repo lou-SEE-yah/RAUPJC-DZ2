@@ -34,8 +34,14 @@ namespace Repositories
             // x ?? y -> if x is not null , expression returns x. Else y.
         }
 
+        
+
         public void Add(TodoItem todoItem)
         {
+            if (todoItem == null)
+            {
+                throw new ArgumentNullException();
+            }
             if (_inMemoryTodoDatabase.Where(s => s.Equals(todoItem)).FirstOrDefault() != null)
             {
                 throw new DuplicateTodoItemException("duplicate id: {" + todoItem.Id + "}");
@@ -70,7 +76,7 @@ namespace Repositories
 
         public List<TodoItem> GetFiltered(Func<TodoItem, bool> filterFunction)
         {
-            List<TodoItem> list = _inMemoryTodoDatabase.Where(s => filterFunction(s)==true).ToList();
+            List<TodoItem> list = _inMemoryTodoDatabase.Where(s => filterFunction(s) == true).ToList();
             return list;
         }
 
@@ -84,7 +90,7 @@ namespace Repositories
 
         public bool Remove(Guid todoId)
         {
-            TodoItem item = _inMemoryTodoDatabase.Where(s=> s.Id.Equals(todoId)).FirstOrDefault();
+            TodoItem item = _inMemoryTodoDatabase.Where(s => s.Id.Equals(todoId)).FirstOrDefault();
             if (item == null)
                 return false;
             _inMemoryTodoDatabase.Remove(item);
@@ -100,7 +106,16 @@ namespace Repositories
             }
             else
                 _inMemoryTodoDatabase.Add(todoItem);
-            
+
+        }
+
+        public bool Contains(TodoItem todoItem)
+        {
+            if (_inMemoryTodoDatabase.Contains(todoItem) == true)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
