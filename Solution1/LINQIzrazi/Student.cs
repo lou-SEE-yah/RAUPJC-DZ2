@@ -18,7 +18,6 @@ namespace LINQIzrazi
             Jmbag = jmbag;
         }
 
-
         public static bool operator ==(Student student1, Student student2)
         {
             if (object.ReferenceEquals(student1, null) || object.ReferenceEquals(student2, null))
@@ -48,10 +47,10 @@ namespace LINQIzrazi
             return this.Jmbag.GetHashCode();
         }
 
-        public override string ToString()
+        /*public override string ToString()
         {
             return Jmbag.ToString() + "-" + Name.ToString();
-        }
+        }*/
     }
 
     public enum Gender
