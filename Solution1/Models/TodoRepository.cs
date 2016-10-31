@@ -34,8 +34,6 @@ namespace Repositories
             // x ?? y -> if x is not null , expression returns x. Else y.
         }
 
-        
-
         public void Add(TodoItem todoItem)
         {
             if (todoItem == null)
@@ -97,7 +95,6 @@ namespace Repositories
             return true;
         }
         
-        //ne ardi
         public void Update(TodoItem todoItem)
         {
             if (_inMemoryTodoDatabase.Contains(todoItem))
@@ -112,7 +109,7 @@ namespace Repositories
 
         public bool Contains(TodoItem todoItem)
         {
-            if (_inMemoryTodoDatabase.Contains(todoItem) == true)
+            if (_inMemoryTodoDatabase.Contains(todoItem))
             {
                 return true;
             }

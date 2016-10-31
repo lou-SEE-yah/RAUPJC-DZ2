@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using zad2;
 
 namespace Repositories.Tests
 {
@@ -66,29 +67,79 @@ namespace Repositories.Tests
         }
         #endregion
 
+        #region Constructor tests
         [TestMethod()]
-        public void TodoRepositoryTest()
+        public void TodoRepositoryNullTest()
         {
-            Assert.Fail();
+            ITodoRepository repository = new TodoRepository();
+            Assert.IsNotNull(repository);
         }
 
+        [TestMethod()]
+        public void TodoRepositoryNotNullTest()
+        {
+            IGenericList<TodoItem> initialDbState = new GenericList<TodoItem>();
+            ITodoRepository repository = new TodoRepository(initialDbState);
+            Assert.IsNotNull(repository);
+        }
+        #endregion
 
         [TestMethod()]
         public void GetActiveTest()
         {
-            Assert.Fail();
+            ITodoRepository repository = new TodoRepository();
+            var todoItem = new TodoItem(" Groceries ");
+            var todoItem1 = new TodoItem(" Groceries1 ");
+            var todoItem2 = new TodoItem(" Groceries2 ");
+            var todoItem3 = new TodoItem(" Groceries3 ");
+            todoItem2.MarkAsCompleted();
+            repository.Add(todoItem);
+            repository.Add(todoItem1);
+            repository.Add(todoItem2);
+            repository.Add(todoItem3);
+            List<TodoItem> list = repository.GetActive();
+            foreach (var item in list)
+            {
+                Assert.IsTrue(item.IsCompleted == false);
+            }
         }
 
         [TestMethod()]
         public void GetAllTest()
         {
-            Assert.Fail();
+            ITodoRepository repository = new TodoRepository();
+            var todoItem = new TodoItem(" Groceries ");
+            var todoItem1 = new TodoItem(" Groceries1 ");
+            var todoItem2 = new TodoItem(" Groceries2 ");
+            var todoItem3 = new TodoItem(" Groceries3 ");
+            todoItem2.MarkAsCompleted();
+            repository.Add(todoItem);
+            repository.Add(todoItem1);
+            repository.Add(todoItem2);
+            repository.Add(todoItem3);
+            List<TodoItem> list = repository.GetAll();
+            Assert.IsTrue();
         }
 
         [TestMethod()]
         public void GetCompletedTest()
         {
-            Assert.Fail();
+            ITodoRepository repository = new TodoRepository();
+            var todoItem = new TodoItem(" Groceries ");
+            var todoItem1 = new TodoItem(" Groceries1 ");
+            var todoItem2 = new TodoItem(" Groceries2 ");
+            var todoItem3 = new TodoItem(" Groceries3 ");
+            todoItem2.MarkAsCompleted();
+            todoItem3.MarkAsCompleted();
+            repository.Add(todoItem);
+            repository.Add(todoItem1);
+            repository.Add(todoItem2);
+            repository.Add(todoItem3);
+            List<TodoItem> list = repository.GetCompleted();
+            foreach (var item in list)
+            {
+                Assert.IsTrue(item.IsCompleted);
+            }
         }
 
         [TestMethod()]
@@ -157,38 +208,48 @@ namespace Repositories.Tests
         #endregion
 
         #region Update tests
-        //ne radi
         [TestMethod()]
-        public void UpdateTest()
+        public void UpdateExistingTest()
         {
             ITodoRepository repository = new TodoRepository();
             var todoItem = new TodoItem(" Groceries ");
             repository.Add(todoItem);
             todoItem.Text = "Groceries2";
             repository.Update((todoItem));
-            Assert.Equals(repository.Get(todoItem.Id).Text, todoItem.Text);
+            Assert.AreEqual(repository.Get(todoItem.Id).Text, todoItem.Text);
+        }
+
+        [TestMethod()]
+        public void UpdateNonExistingTest()
+        {
+            ITodoRepository repository = new TodoRepository();
+            var todoItem = new TodoItem(" Groceries ");
+            repository.Update((todoItem));
+            Assert.IsTrue(repository.Contains(todoItem));
         }
         #endregion
 
-        [TestMethod()]
+        #region Contains tests
+        [TestMethod]
         public void ContainsTest()
         {
-            TodoRepository repository = new TodoRepository();
+            ITodoRepository repository = new TodoRepository();
             var todoItem = new TodoItem(" Groceries ");
             repository.Add(todoItem);
             bool test = repository.Contains(todoItem);
-            Assert.IsTrue(test == true);
+            Assert.IsTrue(test);
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void ContainsTest1()
         {
-            TodoRepository repository = new TodoRepository();
+            ITodoRepository repository = new TodoRepository();
             var todoItem = new TodoItem(" Groceries ");
-            var todoItem2 = new TodoItem(" Groceries2 ");
+            TodoItem todoItem2 = new TodoItem(" Groceries2 ");
             repository.Add(todoItem);
             bool test = repository.Contains(todoItem2);
             Assert.IsTrue(test == false);
         }
+        #endregion
     }
 }

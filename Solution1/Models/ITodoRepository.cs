@@ -62,6 +62,6 @@ namespace Interfaces
         /// </ summary >
         List<TodoItem> GetFiltered(Func<TodoItem, bool> filterFunction);
 
-        //bool Contains(TodoItem todoItem);
+        bool Contains(TodoItem todoItem);
     }
 }
