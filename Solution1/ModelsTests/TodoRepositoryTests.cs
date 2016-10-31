@@ -118,7 +118,7 @@ namespace Repositories.Tests
             repository.Add(todoItem2);
             repository.Add(todoItem3);
             List<TodoItem> list = repository.GetAll();
-            Assert.IsTrue();
+            Assert.IsTrue(list.Count == 4);
         }
 
         [TestMethod()]
@@ -145,7 +145,22 @@ namespace Repositories.Tests
         [TestMethod()]
         public void GetFilteredTest()
         {
-            Assert.Fail();
+            ITodoRepository repository = new TodoRepository();
+            var todoItem = new TodoItem(" Groceries ");
+            var todoItem1 = new TodoItem(" Groceries1 ");
+            var todoItem2 = new TodoItem(" Groceries2 ");
+            var todoItem3 = new TodoItem(" Groceries3 ");
+            todoItem2.MarkAsCompleted();
+            todoItem3.MarkAsCompleted();
+            repository.Add(todoItem);
+            repository.Add(todoItem1);
+            repository.Add(todoItem2);
+            repository.Add(todoItem3);
+            List<TodoItem> list = repository.GetFiltered(s => s.DateCompleted.Equals(DateTime.Now));
+            foreach (var item in list)
+            {
+                Assert.IsTrue(item.DateCompleted.Equals(DateTime.Now));
+            }
         }
 
         #region Mark as completed tests
